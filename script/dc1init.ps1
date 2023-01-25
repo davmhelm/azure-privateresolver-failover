@@ -26,4 +26,6 @@ Install-ADDSForest -DomainName $DomainName `
     -LogPath "$($DataVolume.DriveLetter):\Logs" `
     -NoRebootOnCompletion:$false `
     -SafeModeAdministratorPassword (ConvertTo-SecureString -String $SafeModeAdministratorPassword -AsPlainText -Force)`
-    -Force
+    -Force -Debug
+
+Start-Sleep -Seconds 300
