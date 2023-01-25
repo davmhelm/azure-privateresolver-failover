@@ -1,0 +1,6 @@
+# Ignore Visio files
+*.vsd
+*.vsdx
+
+# Ignore temp files
+~*
