@@ -28,7 +28,7 @@ Get-ADReplicationSite -Identity "Default-First-Site-Name" `
     -Server $DomainName -Credential $DomainCredential 
 
 # Create Subnet address space for lab site 1
-New-AdReplicationSubnet -Name $Site1CidrBlock --Site $Site1Name -Server $DomainName -Credential $DomainCredential
+New-AdReplicationSubnet -Name $Site1CidrBlock -Site $Site1Name -Server $DomainName -Credential $DomainCredential
 
 # Create AD site for lab site 2
 New-AdReplicationSite -Name $Site2Name -Server $DomainName -Credential $DomainCredential
